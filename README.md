@@ -1,33 +1,39 @@
 # mako-ad-blocker
-An ad blocker for Mako streaming platform using image recognition to identify ads.
+
+An ad blocker for the Mako streaming platform using image recognition to identify ads.
 
 ## Installation
 
-To use this ad blocker, you will need to install the following dependencies:
+To use this ad blocker:
 
-1. [Dark Reader](https://darkreader.org/) - A browser extension that helps you read web pages in a more comfortable and efficient way by inverting brightness and contrast. this is crucial for the project - this extension recognizes ads as a different element than the video itself, so it thinks the video needs "darkening" and what happens is that the ad gets completely blacked out.
-2. [VideoSpeed Controller](https://github.com/igrigorik/videospeed) - A browser extension that allows you to control the playback speed of HTML5 videos.
+1. Download the latest version of the `Main.ahk` and `Setup.ahk` scripts.
+2. Run the `Setup.ahk` script to create a shortcut on your desktop.
+3. Configure the ad blocker by adjusting the settings in the `settings.ini` file.
 
 ## Usage
 
-1. Install the dependencies mentioned above.
-2. Download the latest version of the `Main.ahk` and `Setup.ahk` scripts from the repository.
-3. Run the `Setup.ahk` script to create a shortcut on your desktop.
-4. Double-click the shortcut to start the `Main.ahk` script.
-5. Configure the ad blocker by adjusting the settings in the `settings.ini` file.
+1. Install the required dependencies:
+   - [Dark Reader](https://darkreader.org/)
+   - [VideoSpeed Controller](https://github.com/igrigorik/videospeed) or any other video speed control extension. to use the fast forward feature, make sure the fastforward variable is set to 1.
+2. Customize your settings through the `settings.ini` file or through `Setup.ahk`.
+3. Run the `Main.ahk` script to start the ad blocker.
+    - F8 will toggle the script on and off.
+    - While the script is scanning for ads, there will be a tray icon showing the script is active.
+
+#### Icons
+
+When the script is not scanning for ads, the tray icon will show as: 
+<img src="stopped.ico" alt="Stopped Icon" width="30" height="30" style="vertical-align: middle; margin-top: 5px;">
+
+When the script is scanning for ads, the tray icon will show as: 
+<img src="scanning.ico" alt="Scanning Icon" width="32" height="32" style="vertical-align: middle; margin-top: 2px;">
 
 ### Recommended Settings
 
-To make ads as short as possible and mute them, you can set the following VideoSpeed Controller preferences:
-
-1. Open the VideoSpeed Controller options.
-2. Click on the "Options" button.
-3. In the "Preferred speed" dropdown, select "16".
+To optimize your ad blocking experience:
+- Set VideoSpeed Controller's preferred speed to 16.
+- Use the recommended settings in the `settings.ini` file.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions or improvements, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! If you have suggestions or improvements, please feel free to open an issue or submit a pull request.
