@@ -23,7 +23,7 @@ To use this ad blocker:
 #### Icons
 
 When the script is not scanning for ads, the tray icon will show as: 
-<img src="stopped.ico" alt="Stopped Icon" width="30" height="30" style="vertical-align: middle; margin-top: 5px;">
+<img src="stopped.ico" alt="Stopped Icon" width="32" height="32" style="vertical-align: middle; margin-top: 5px;">
 
 When the script is scanning for ads, the tray icon will show as: 
 <img src="scanning.ico" alt="Scanning Icon" width="32" height="32" style="vertical-align: middle; margin-top: 2px;">
